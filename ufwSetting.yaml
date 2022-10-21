@@ -1,0 +1,6 @@
+- name: ufwsetting
+  hosts: all
+  become: yes
+  tasks:
+    - name: disableufw
+      shell: ufw disable
