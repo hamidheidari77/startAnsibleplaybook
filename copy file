@@ -1,0 +1,7 @@
+- name: copy the file to the remote machine
+  hosts: all
+  tasks:
+  - name: copingFile
+    copy:
+      src: ~/ip.txt
+      dest: /temp/
